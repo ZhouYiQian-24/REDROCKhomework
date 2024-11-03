@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+    <style>
+        div{
+            text-align: center;
+        }
+
+        /* 背景 */
+        body {
+            background-image: url(tfm.jpg);
+		    background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            
+        }
+
+        /* 登录盒子 */
+        .container {
+            width: 435px;
+            height: 660px;    
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        /* 手机号码、 */
+        
+        input[type="text"]{
+            width: 85%;
+            height: 30px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #2a8d3963;
+            border-radius: 5px;
+            margin-top: 80px;
+        }
+
+
+/* 下面的注释是我想写选择前缀的那种效果，但是写不出来，选择框总是很小，而且跟在后面，不知道怎么回事 */
+
+
+        /* input[type="text"]{
+        float: left;
+        width: 300px;
+        height: 30px;
+        padding-left: 10px;
+        color: #2a8d3963;
+        
+        }
+        input[type="select"]{
+        float: right;5
+        width: 70px;
+        height: 30px;
+        background-color: #2a8d3963;
+        font-size: 16px;
+        color: #fff;
+        
+        } */
+
+
+        /* 密码框 */
+        input[type="password"] {
+            width: 85%;
+            height: 30px;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #2a8d3963;
+            border-radius: 5px;
+            
+        }
+        
+
+        /* 登录 */
+        input[type="submit"] {
+            width: 80%;
+            padding: 20px;
+            background-color: #2a8d3963;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+
+        }
+        /* 下面的三个为什么用margin-top和bottom不能移动啊 */
+        /* 忘记密码 */
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        /* 验证码 */
+        .checkcode{
+            text-align: right;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        /* 注册 */
+        .register{
+            text-align: center;
+            margin-top: 10px;
+            color: #2a8d3963;
+        }
+        
+
+        .social-login {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <body>
+    <div class="container">
+        <div class="image-container">
+            <img class="image" src="cqupt.jpg" alt="校徽" width="150px" >
+        </div>
+        <form>
+            <!-- <select>
+                <option>+86</option>
+            </select> -->
+            <input type="text" id="username" placeholder="请输入手机号码">
+            <input type="password" id="password" placeholder="请输入密码"><br/><br/>
+            <input type="checkbox"   />自动登录
+            <span class="checkcode">
+                <a href="#">验证码登录</a>
+            </span>
+            <span class="forgot-password">
+                <a href="#">忘记密码?</a><br/><br/>
+            </span>
+            <input type="submit" value="登录"></br/>
+            <span>
+                <a href="#">注册</a>
+            </span>
+        </form>
+        <div class="social-login">
+
+            <a href="#"><img src="微信.png" width="42px"></a>  
+            <a href="#"><img src="QQ.png" width="50px"></a>  
+            <a href="#"><img src="微博.png" width="46px"></a>  
+        </div>
+       
+    </div>
+</body>
+</html>
